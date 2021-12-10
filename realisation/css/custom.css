@@ -1,3 +1,11 @@
 .bg-primary {
-    color: blue;
+    background-color: blue !important;
+}
+
+.btn-danger{
+    background-color: tomato !important;
+}
+
+.sb-sidenav-dark{
+    background-image: url();
 }
