@@ -58,24 +58,24 @@
                                 <form class="row g-3">
                                     <div class="col-md-6">
                                       <label for="inputTitle" class="form-label">Titre</label>
-                                      <input type="text" class="form-control" id="inputTitle">
+                                      <input type="text" class="form-control" id="inputTitle" required>
                                     </div>
                                     <div class="col-md-6">
                                       <label for="inputAuthor" class="form-label">Auteur</label>
-                                      <input type="text" class="form-control" id="inputAuthor">
+                                      <input type="text" class="form-control" id="inputAuthor" required>
                                     </div>
                                     <div class="col-6">
                                       <label for="inputPrix" class="form-label">prix</label>
-                                      <input type="number" class="form-control" id="inputPrix" >
+                                      <input type="number" class="form-control" id="inputPrix" required>
                                     </div>
                                     
                                     <div class="col-md-6">
                                       <label for="inputDate" class="form-label">Date de publication</label>
-                                      <input type="date" class="form-control" id="inputDate">
+                                      <input type="date" class="form-control" id="inputDate" required >
                                     </div>
                                    
                                     <div class="col-md-6">
-                                        <label for="inputLanguage">Langue</label>
+                                        <label for="inputLanguage" class="form-label">Langue</label>
                                         <select id="inputLanguage">
                                             <option value="" disabled selected>choisir...</option>
                                             <option value="français">Français</option>
@@ -83,7 +83,29 @@
                                             <option value="arabe">Arabe</option>
                                         </select>
                                     </div>
-
+                                    <div class="col-12">
+                                        <label for="workType" class="form-label">Type</label>
+                                        <div>
+                                            <input value="Roman" name="workType" type="radio" id="gridCheck">
+                                            <label for="gridCheck">
+                                                Roman
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input value="Essai" name="workType" type="radio" id="gridCheck">
+                                            <label  for="gridCheck">
+                                                Essai
+                                            </label>
+                                        </div>
+    
+                                        <div>
+                                            <input  name="workType" value="Bande-Dessinée" type="radio" id="gridCheck">
+                                            <label  for="gridCheck">
+                                                Bande-Dessinée
+                                            </label>
+                                        </div>
+    
+                                    </div>
                                     <div class="col-12">
                                       <button type="submit" class="btn btn-primary">Ajouter</button>
                                     </div>
