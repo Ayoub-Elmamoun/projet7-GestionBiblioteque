@@ -66,7 +66,7 @@ function insertNewRow(work) {
 
     var deleteContent = document.createTextNode('Delete')
     deleteButton.appendChild(deleteContent)
-    deleteButton.className = "btn btn-secondary"
+    deleteButton.className = "btn btn-danger"
     deleteButton.setAttribute("onclick", 'onDelete(this)')
 
     cell7.appendChild(editButton)
