@@ -7,5 +7,10 @@
 }
 
 .sb-sidenav-dark{
-    background-image: url();
+    background-image: url(../icon/books-bg.jpg);
+    background-size: cover;
+}
+
+.clr-dark {
+    color:;
 }
