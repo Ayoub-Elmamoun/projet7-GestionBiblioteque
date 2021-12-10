@@ -23,13 +23,7 @@
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
-                        <div class="nav">
-                           
-                            <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Tableau de bord
-                            </a>
-                           
+                        <div class="nav">                
                             <a class="nav-link" href="gestion-ouvrages.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                                 Ouvrages
@@ -50,6 +44,9 @@
                             <li class="breadcrumb-item"><a href="index.html">Tableau de bord</a></li>
                             <li class="breadcrumb-item active">Ouvrages</li>
                         </ol>
+                            <div>
+                                <button onclick="hide()">Caché/montrer Table </button>
+                            </div>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
@@ -60,16 +57,16 @@
                                       <label for="inputTitle" class="form-label">Titre</label>
                                       <input type="text" class="form-control" id="inputTitle" required>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                       <label for="inputAuthor" class="form-label">Auteur</label>
                                       <input type="text" class="form-control" id="inputAuthor" required>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-4">
                                       <label for="inputPrix" class="form-label">prix</label>
                                       <input type="number" class="form-control" id="inputPrix" required>
                                     </div>
                                     
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                       <label for="inputDate" class="form-label">Date de publication</label>
                                       <input type="date" class="form-control" id="inputDate" required >
                                     </div>
