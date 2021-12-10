@@ -14,14 +14,14 @@ document.getElementById("formSubmit").addEventListener("submit", function (event
     }
 })
 
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+function hideFonction() {
+    var x = document.getElementById("formSubmit");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
   }
-}
 
 function resetForm() {
     document.getElementById("inputTitle").value = "";
