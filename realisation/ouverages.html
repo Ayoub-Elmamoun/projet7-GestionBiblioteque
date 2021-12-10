@@ -57,23 +57,33 @@
 
                                 <form class="row g-3">
                                     <div class="col-md-6">
-                                      <label for="titre" class="form-label">Titre</label>
-                                      <input type="text" class="form-control" id="titre">
+                                      <label for="inputTitle" class="form-label">Titre</label>
+                                      <input type="text" class="form-control" id="inputTitle">
                                     </div>
                                     <div class="col-md-6">
-                                      <label for="auteur" class="form-label">Auteur</label>
-                                      <input type="text" class="form-control" id="auteur">
+                                      <label for="inputAuthor" class="form-label">Auteur</label>
+                                      <input type="text" class="form-control" id="inputAuthor">
                                     </div>
                                     <div class="col-6">
-                                      <label for="prix" class="form-label">prix</label>
-                                      <input type="number" class="form-control" id="prix" >
+                                      <label for="inputPrix" class="form-label">prix</label>
+                                      <input type="number" class="form-control" id="inputPrix" >
                                     </div>
                                     
                                     <div class="col-md-6">
-                                      <label for="date" class="form-label">Date de sortie</label>
-                                      <input type="date" class="form-control" id="date">
+                                      <label for="inputDate" class="form-label">Date de publication</label>
+                                      <input type="date" class="form-control" id="inputDate">
                                     </div>
                                    
+                                    <div class="col-md-6">
+                                        <label for="inputLanguage">Langue</label>
+                                        <select id="inputLanguage">
+                                            <option value="" disabled selected>choisir...</option>
+                                            <option value="français">Français</option>
+                                            <option value="anglais">Anglais</option>
+                                            <option value="arabe">Arabe</option>
+                                        </select>
+                                    </div>
+
                                     <div class="col-12">
                                       <button type="submit" class="btn btn-primary">Ajouter</button>
                                     </div>
