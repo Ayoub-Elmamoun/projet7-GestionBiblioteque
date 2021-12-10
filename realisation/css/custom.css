@@ -1,5 +1,5 @@
 .bg-primary {
-    background-color: blue !important;
+    background-color:#0073CF !important;
 }
 
 .btn-danger{
@@ -12,5 +12,5 @@
 }
 
 .clr-dark {
-    color: black;
+    color: black !important;
 }
