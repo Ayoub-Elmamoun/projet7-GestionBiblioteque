@@ -64,5 +64,26 @@ for (let i = 0; i < list.length; i++) {
 }
 
 function reset(){
-    document.getElementById('number')
+    document.getElementById('number').value=""
+    document.getElementById('nature').value=""
+    selectRow = null
+}
+
+function Edit(buttonReference){
+  
+    selectRow = buttonReference.parentElement.parentElement;
+     var rowId = selectRow.cells[0].innerHTML;
+    var salle = sallemanager.getSale(rowId);
+    document.getElementById('number').value = salle.number;
+    document.getElementById('nature').value = salle.nature;
+
+}
+
+function Delete(buttonReference){
+    if(confirm("detele it ?"))
+
+    row=buttonReference.parentElement
+    rowId = row.cell[0].innerHTML
+    document.getElementById('table').deleteRow(row.indexRow)
+    sallemanager.DeleteSale(rowId)
 }
