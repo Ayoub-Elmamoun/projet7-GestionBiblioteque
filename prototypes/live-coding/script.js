@@ -31,3 +31,20 @@ function readSalle(){
 
     return Salle
 }
+
+function insertSalle() {
+
+list = salleManager.salleList
+let table = document.getElementsByTagName('tbody')[0];
+while (table.rows.length > 0){
+    table.deleteRow(0)
+}
+
+
+for (let i = 0; i < list.length; i++) {
+    newRow = table.insertRow(table.length)
+    cell1 = newRow.insertCell(0).innerHtml = list[i].id
+    cell1 = newRow.insertCell(0).innerHtml = list[i].number
+    cell1 = newRow.insertCell(0).innerHtml = list[i].nature
+}
+}
