@@ -46,5 +46,23 @@ for (let i = 0; i < list.length; i++) {
     cell1 = newRow.insertCell(0).innerHtml = list[i].id
     cell1 = newRow.insertCell(0).innerHtml = list[i].number
     cell1 = newRow.insertCell(0).innerHtml = list[i].nature
+
+    var editButton = document.createElement('button')
+    var editContent = document.createTextNode('edit')
+
+    editButton.appendChild(editContent)
+    editButton.setAttribute('onlick','Edit(this)')
+
+    var deleteButton = document.createElement('button');
+    var deleteContent = document.createTextNode('Delete');
+    deleteButton.appendChild(deleteContent);
+    deleteButton.setAttribute('onclick', 'Delete(this)')
+
+    cell4 = newRow.insertCell(3).appendChild(editButton);
+    cell4 = newRow.insertCell(3).appendChild(deleteButton);
 }
+}
+
+function reset(){
+    document.getElementById('number')
 }
