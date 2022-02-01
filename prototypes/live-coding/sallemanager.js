@@ -1,27 +1,44 @@
-class sallemanager {
-    sallelist=[]
-    compter=0
-}
+class salleManager{ 
+    #salleList = [];
+    #counter = 0;
 
-addsalle(salle){
-    this.compter = this.compteur+1
-    Salle.id = this.compteur
-    this.sallelist.push(Salle)
-}
-
-modify(salle){
-    for (let i = 0; i < this.sallelist.length; i++) {
-        if (this.id = this.sallelist[i].id) {
-           this.sallelist[i] = salle 
-
-           return salle
-        }
-        
+    get salleList(){
+        return this.#salleList;
     }
-}
 
-deletesalle(id){
-    this.sallelist = this.sallelist.filter(function(salle){
-        return salle.id != id
-    })
+
+    addSalle(Salle){
+        this.#counter = this.#counter + 1;
+        Salle.id = this.#counter;
+        this.#salleList.push(Salle);
+    }
+
+    getSale(rowId){
+        for(let i = 0; i<this.#salleList.length; i++){
+            if(rowId = this.#salleList[i].id){
+                return this.#salleList[i];
+            }
+        }
+    }
+
+    Modify(salle){
+        for(var i= 0; i<this.salleList.length; i++){
+            if(salle.id = this.salleList[i].id){
+              this.salleList[i] = salle;
+
+              return salle;
+            }
+        }
+    }
+
+    deleteSale(id){
+        this.#salleList=  this.#salleList.filter(function(salle){
+
+            return salle.id != id
+
+        })
+
+
+    }
+
 }
